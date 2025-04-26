@@ -12,12 +12,20 @@ Currently, we offer you three services:
 3. Analyze your Brain for tumors.
 
 ## AI Bot
-The AI bot we created is an agentic RAG that leverages disease symptoms to generate answer. We are using a llama3.2 3b model as our LLM with LangGraph helping us create an agentic RAG. The agent also has a memory, that gets activated once you achieve 3 successful interactions.
+The AI bot we created is an agentic RAG that leverages disease symptoms to generate answers. Users can input their system, and get an answer from our powerful bot
+
+## RAG System
+We leverage the power of `LangGraph` to create a stateful, graph-based workflow with LLMs. We are currently using `llama3.2 3b model` as our LLM with `nomic-embed-text` as our embedding model and `chromaDb` as our vector database. 
+
+As for our RAG, we have 5 main nodes: starting router, retriever, generator, summary, and irrelevant. The irrelevant node is used to deal with irrelevant queries.  As for our summary, it gets generated only after three consecutive successful generations.
+
+![image](https://github.com/user-attachments/assets/18382c61-18de-4a10-94f9-219fb34f3c41)
+
 
 ## Tech
 **Frontend**: We are using NextJs for our frontend.
 
-**Backend**: We are using Flask as our backend api
+**Backend**: We are using Flask as our backend to serve our NextJs frontend. We have two main functionalities: image detection and RAG conversation. 
 
 
 
