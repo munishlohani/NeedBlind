@@ -15,8 +15,8 @@ export default function Home() {
 
   const uploadOptions = [
     {
-      title: 'Upload Tuberclosis',
-      description: 'Upload and analyze Tuberclosis',
+      title: 'Upload Tuberculosis',
+      description: 'Upload and analyze Tuberculosis',
       icon: tb,
       path: '/upload/tuberculosis'
     },
