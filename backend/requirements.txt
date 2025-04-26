@@ -1,0 +1,12 @@
+flask==3.0.2
+flask-cors==4.0.0
+requests==2.31.0
+python-dotenv==1.0.1
+Pillow==10.2.0
+numpy==1.26.4
+langchain==0.1.12
+langchain-community==0.0.27
+langchain-ollama==0.0.1
+torch==2.2.1
+fastai==2.7.18
+chromadb==0.4.24 
