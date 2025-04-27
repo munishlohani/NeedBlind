@@ -10,6 +10,8 @@ print("Loading ML models...")
 pneumonia_model = load_learner("model.pkl")
 tuberculosis_model = load_learner("modeltb.pkl")
 brain_tumor_model = load_learner("modelbt.pkl")
+skin_model=load_learner("model_skin.pkl")
+# knee=load_learner("best_kneeoa.pkl")
 print("ML models loaded successfully")
 
 def process_image(image_tensor, model):
@@ -75,6 +77,13 @@ def register_routes(app):
                 elif image_type == 'brain_tumor':
                     result = process_image(image_tensor, brain_tumor_model)
                     model_name = "Brain Tumor"
+
+                elif image_type=="skin_diseases":
+                    result=process_image(image_tensor, skin_model)
+                    model_name="Skin Diseases"
+                # elif image_type=="knee":
+                #     result=process_image(image_tensor, knee)
+                #     model_name="Knee Osteoarthritis"
                 else:
                     return jsonify({"error": f"Invalid image type: {image_type}. Valid types are: pneumonia, tuberculosis, brain_tumor"}), 400
                 

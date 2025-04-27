@@ -17,6 +17,7 @@ def create_app():
     
     # Initialize extensions
     cors.init_app(app)
+
     
     # Import and register routes
     from routes import register_routes
