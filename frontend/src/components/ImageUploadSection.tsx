@@ -29,7 +29,7 @@ export default function ImageUploadSection({ analysisType }: ImageUploadSectionP
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
     accept: {
-      'image/*': ['.jpeg', '.jpg', '.png', '.dicom']
+      'image/*': ['.jpeg', '.jpg', '.png']
     },
     maxFiles: 1
   });

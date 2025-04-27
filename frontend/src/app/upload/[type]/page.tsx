@@ -22,6 +22,10 @@ export default function UploadPage({ params }: { params: Promise<{ type: string 
         return 'Pneumonia Analysis';
       case 'brain_tumor':
         return 'Brain Tumor Analysis';
+      case 'skin_diseases':
+        return "Skin Disease Analysis"
+      case 'knee':
+        return "Knee Osteoarthritis Analysis"
       default:
         return 'Medical Image Analysis';
     }
