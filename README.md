@@ -27,6 +27,36 @@ As for our RAG, we have 5 main nodes: starting router, retriever, generator, sum
 
 **Backend**: We are using Flask as our backend to serve our NextJs frontend. We have two main functionalities: image detection and RAG conversation. 
 
+### Image Detection
+
+Our Flask API offers five pretrained pipelines for medical image analysis:
+
+- **Knee Osteoarthritis**  
+  • 10 000+ X-rays, 5 severity grades  
+  • EfficientNet-B3 backbone, MixUp & label smoothing  
+  • Val accuracy ~78%
+
+- **Skin Disease Classification**  
+  • DermNet dataset (20+ lesion types)  
+  • ResNeXt-50 32×4d backbone, aggressive aug & MixUp  
+  • Val accuracy ~80%
+
+- **Brain Tumor Detection**  
+  • 250+ MRI scans (tumor vs. non-tumor)  
+  • EfficientNet-B2 backbone  
+  • Val accuracy ~99–100%
+
+- **Pneumonia Detection**  
+  • 5800+ Chest X-rays (pneumonia vs. normal)  
+  • DenseNet-121 backbone  
+  • Val accuracy ~99–100%
+
+- **Tuberculosis Detection**  
+  • 4200+ Chest X-rays (TB vs. normal)  
+  • DenseNet-121 backbone  
+  • Val accuracy ~99–100%
+
+
 
 
 
