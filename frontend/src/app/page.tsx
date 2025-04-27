@@ -6,6 +6,8 @@ import Image from 'next/image';
 import tb from '../assets/tb.jpg'
 import pneo from '../assets/pneo.jpg'
 import tumor from '../assets/tumor.jpg'
+import skin from "../assets/skin.jpg"
+import knee from "../assets/knee.jpg"
 import ChatPopup from '@/components/ChatPopup';
 import { useState } from 'react';
 
